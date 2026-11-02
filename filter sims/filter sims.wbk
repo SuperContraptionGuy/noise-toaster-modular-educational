@@ -1,0 +1,111 @@
+{
+  "custom_cursors": 2,
+  "last_sch_text_sim_command": "",
+  "tabs": [
+    {
+      "analysis": "AC",
+      "commands": [
+        ".ac dec 1000 20 20k",
+        ".kicad adjustpaths",
+        ".save all",
+        ".probe alli",
+        ".probe allp"
+      ],
+      "dottedSecondary": true,
+      "margins": {
+        "bottom": 45,
+        "left": 70,
+        "right": 70,
+        "top": 30
+      },
+      "measurements": [],
+      "showGrid": true,
+      "traces": [
+        {
+          "color": "rgb(55, 126, 184)",
+          "signal": "V(/out) (phase)",
+          "trace_type": 517
+        },
+        {
+          "color": "rgb(55, 126, 184)",
+          "signal": "V(/out) (gain)",
+          "trace_type": 521
+        }
+      ]
+    },
+    {
+      "analysis": "OP",
+      "commands": [
+        ".op",
+        ".kicad adjustpaths",
+        ".save all",
+        ".probe alli",
+        ".probe allp"
+      ]
+    },
+    {
+      "analysis": "TRAN",
+      "commands": [
+        ".tran 100n 1m",
+        ".kicad adjustpaths",
+        ".save all",
+        ".probe alli",
+        ".probe allp"
+      ],
+      "dottedSecondary": true,
+      "margins": {
+        "bottom": 45,
+        "left": 70,
+        "right": 70,
+        "top": 30
+      },
+      "measurements": [],
+      "showGrid": true,
+      "traces": [
+        {
+          "color": "rgb(55, 126, 184)",
+          "signal": "I(V4)",
+          "trace_type": 258
+        },
+        {
+          "color": "rgb(228, 26, 28)",
+          "signal": "V(/input)",
+          "trace_type": 257
+        }
+      ]
+    },
+    {
+      "analysis": "AC",
+      "commands": [
+        ".ac dec 100 10 20k",
+        ".kicad adjustpaths",
+        ".save all",
+        ".probe alli",
+        ".probe allp"
+      ],
+      "dottedSecondary": true,
+      "margins": {
+        "bottom": 45,
+        "left": 70,
+        "right": 70,
+        "top": 30
+      },
+      "measurements": [],
+      "showGrid": true,
+      "traces": [
+        {
+          "color": "rgb(55, 126, 184)",
+          "signal": "I(V4) (gain)",
+          "trace_type": 522
+        },
+        {
+          "color": "rgb(228, 26, 28)",
+          "signal": "V(/input) (gain)",
+          "trace_type": 521
+        }
+      ]
+    }
+  ],
+  "user_defined_signals": [],
+  "version": 7
+}
